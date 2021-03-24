@@ -1,0 +1,13 @@
+== Goals
+[%step]
+* Etwas gelernt
+* In der Lage Kotlin-code zu schreiben und auszuführen
+* Fallstricke wenn man aus Java kommt
+
+== No Goals
+[%step]
+* DER 1A Kotlin-Programmierer werden
+* Keine Bytecodeanalyse
+* Java Crashkurs
+* Kein Java-bashing
+* Trotzdem gerne bei Verständnisproblemen oder Fragen zu Java/OOP etc melden

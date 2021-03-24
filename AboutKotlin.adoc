@@ -1,0 +1,140 @@
+[.columns]
+== About Kotlin
+[.column]
+image:images/Java-Logo.svg[width=100, float=right]
+//[.refs]
+//--
+//* Von unbekannt - unbekannt, Logo, https://de.wikipedia.org/w/index.php?curid=2095155
+//--
+
+[.column]
+* Ist eine JVM-Sprache
+[%step]
+* Erlaubt uns Java und Kotlin-Code zu mischen
+
+[.columns]
+== About Kotlin
+[.column]
+[%step]
+* Wir können unsere Libraries nutzen
+* Es ist normaler Bytecode
+
+[.column]
+[%step]
+YAAAY!
+
+[.columns]
+== Combine Kotlin & Java
+
+[.column]
+[source, kotlin]
+----
+include::{docdir}/src/main/java/kotlin_java/way1/CarFactory.kt[]
+----
+
+[.column]
+[source, java]
+----
+include::{docdir}/src/main/java/kotlin_java/way1/Car.java[]
+----
+
+[.columns]
+== Combine Kotlin & Java
+
+
+[.column]
+[source, kotlin]
+----
+include::{docdir}/src/main/java/kotlin_java/way2/CarFactory.java[]
+----
+
+[.column]
+[source, java]
+----
+include::{docdir}/src/main/java/kotlin_java/way2/Car.kt[]
+----
+
+== What did we just see?
+[source, kotlin]
+----
+package kotlin_java.way2 #<1>
+
+class Car { #<2>
+    var licencePlate: String? = null #<3>
+    var model: String? = null #<4>
+    var manufacturer: String? = null
+#<5>
+}
+----
+<1> Kein Terminator (;)
+<2> Kein Sichtbarkeitsmodifyier
+<3> var?
+<4> ??
+<5> getter? setter?
+
+== What did we just see? `;?`
+[source, kotlin]
+----
+package kotlin_java.way2
+----
+[%step]
+* Terminator optional
+* Außer...
+
+[%step]
+[source, kotlin]
+----
+doSomething();doSomething2();
+----
+
+== What did we just see? `visibility`
+
+[source,kotlin]
+----
+class Car
+----
+
+[%step]
+* `public` per default
+** `public`, `private`, `package`, `internal`
+* `final` per default
+** `open`
+
+== What did we just see? `var`
+[source, kotlin]
+----
+ var licencePlate: String? = null
+----
+
+[%step]
+* Schlüsselwort var
+** "Normale" Variablendeklaration
+* Schlüsselwort val
+** Entspricht dem Java `final`
+* `var`/`val` variablenname `:` Typ `=` ...
+
+== What did we just see? `null`
+[source, kotlin]
+----
+var model: String? = null
+----
+
+[%step]
+* Kotlin ist nullsafe
+* Nullable values werden mit `?` gekennzeichnet
+* Kotlin ist nullsafe... except it isn't
+
+[%step]
+[source, kotlin]
+----
+var model: String? = null
+var manufacturer: String = "Trabbi"
+----
+
+== What did we just see? `getter&setter`
+* Getter & Setter werden automatisch in den Bytecode generiert
+[source, java]
+----
+include::src/main/java/kotlin_java/way2/CarFactory.java[lines=8..11]
+----
+

@@ -1,0 +1,21 @@
+
+:icons: font
+[.columns]
+== About me
+[.column]
+image:images/ich.jpg[width=300, float=right]
+
+[.column]
+[%step]
+* Simon
+* 30 Jahre alt
+* seit 10 Jahren Java-Programmierer
+* Kann recht gut tanzen
+
+== Connect
+
+icon:comment[4x,role=White]Discord: Cuupa#5083
+
+icon:git[4x,role=White]Github: Cuupa
+
+icon:twitch[4x,role=White]Twitch: Cuupa1

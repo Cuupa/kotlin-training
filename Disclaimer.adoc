@@ -1,0 +1,8 @@
+== Disclaimer
+
+Bin ziemlich gut in Java +
+[%step]
+aber habe mir Kotlin selbst beigebracht
+
+[%step]
+`Take everything with a grain of salt`

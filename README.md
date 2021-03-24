@@ -1,1 +1,1 @@
-# kotlin-training
+# kotlin_java-training

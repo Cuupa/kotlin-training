@@ -1,0 +1,19 @@
+== PLan
+[%step]
+* Wenn ihr Pause braucht: schreit
+* Bei technischen Problemen: schreit
+* Bei Fragen: fragt
+
+== Einrichtung
+* `Intellij || STS || Eclipse`
+** Intellij preferred
+* `git`
+* `maven || graddle`
+** maven preferred
+
+== Einrichtung
+[%step]
+* Checkt das Projekt `http://github.com/Cuupa/kotlin-training` aus
+* `master`
+* `solution` <- wenn ihr gar nicht weiter kommt
+* Hier sind auch die Slides
