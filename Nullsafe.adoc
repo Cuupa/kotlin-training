@@ -38,7 +38,7 @@ include::src/main/java/nullsafe/CarValidator_kotlin3.kt[]
 ----
 
 [%step]
-* Noch besser!
+* Null ist hier ein gültiger Wert
 
 == How to solve in kotlin
 [source, java]
@@ -47,8 +47,8 @@ include::src/main/java/nullsafe/CarValidator_kotlin4.kt[]
 ----
 
 [%step]
-* Ich will aber!
-* Hier kann eine NullpointerException fliegen!
+* "Ich will aber!"
+* Hier kann eine NullpointerException fliegen
 
 == "Das Übel an der Wurzel packen"
 [source, java]

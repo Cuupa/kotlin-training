@@ -6,3 +6,6 @@ aber habe mir Kotlin selbst beigebracht
 
 [%step]
 `Take everything with a grain of salt`
+
+[%step]
+Sollte ich Fehler machen: Korrigiert mich!

@@ -1,0 +1,39 @@
+== Methods
+
+[source, kotlin]
+----
+fun doSomething() { <.>
+    // TODO: Something
+}
+----
+<.> Schlüsselwort `fun`
+
+[%step]
+* Auch hier gilt public per default
+
+[%step]
+--
+[source, kotlin]
+----
+fun doSomething(): Boolean { <.>
+    return false
+}
+----
+<.> Return-Type nach Doppelpunkt
+--
+
+[%step]
+--
+[source, kotlin]
+----
+fun doSomething(param1: Any, param2: Any?) : Any { <.><.>
+    //Do some awesome stuff
+}
+----
+<.> Parameter sind immer `val`
+<.> `Any` ist `Object` aus Java
+--
+
+[%step]
+* Raider heißt jetzt Twix, sonst ändert sich nix
+* Es würde auch mit Object compilen

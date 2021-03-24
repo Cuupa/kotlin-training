@@ -54,16 +54,20 @@ include::{docdir}/src/main/java/kotlin_java/way2/CarFactory.java[]
 include::{docdir}/src/main/java/kotlin_java/way2/Car.kt[]
 ----
 
+== Why is that awesome
+* Wir können unsere Libraries wie `Apache Commons` nutzen
+* Wir können unsere Frameworks wie `Hibernate` und `Spring` nutzen
+
 == What did we just see?
 [source, kotlin]
 ----
-package kotlin_java.way2 #<1>
+package kotlin_java.way2 <.>
 
-class Car { #<2>
-    var licencePlate: String? = null #<3>
-    var model: String? = null #<4>
+class Car { <.>
+    var licencePlate: String? = null <.><.>
+    var model: String? = null
     var manufacturer: String? = null
-#<5>
+<.>
 }
 ----
 <1> Kein Terminator (;)
@@ -117,19 +121,13 @@ class Car
 [source, kotlin]
 ----
 var model: String? = null
+var manufacturer: String = "Trabbi"
 ----
 
 [%step]
 * Kotlin ist nullsafe
 * Nullable values werden mit `?` gekennzeichnet
 * Kotlin ist nullsafe... except it isn't
-
-[%step]
-[source, kotlin]
-----
-var model: String? = null
-var manufacturer: String = "Trabbi"
-----
 
 == What did we just see? `getter&setter`
 * Getter & Setter werden automatisch in den Bytecode generiert

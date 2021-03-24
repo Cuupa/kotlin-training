@@ -4,11 +4,11 @@ public class Player {
 
     private String name;
 
-    private Integer level;
+    private int level;
 
-    private Integer locationX;
+    private int locationX;
 
-    private Integer locationY;
+    private int locationY;
 
     private Inventory inventory;
 
@@ -20,27 +20,27 @@ public class Player {
         this.name = name;
     }
 
-    public Integer getLevel() {
+    public int getLevel() {
         return level;
     }
 
-    public void setLevel(Integer level) {
+    public void setLevel(int level) {
         this.level = level;
     }
 
-    public Integer getLocationX() {
+    public int getLocationX() {
         return locationX;
     }
 
-    public void setLocationX(Integer locationX) {
+    public void setLocationX(int locationX) {
         this.locationX = locationX;
     }
 
-    public Integer getLocationY() {
+    public int getLocationY() {
         return locationY;
     }
 
-    public void setLocationY(Integer locationY) {
+    public void setLocationY(int locationY) {
         this.locationY = locationY;
     }
 

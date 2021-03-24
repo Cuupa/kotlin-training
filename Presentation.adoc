@@ -16,3 +16,6 @@ include::Nullsafe.adoc[]
 
 include::Exercise1.adoc[]
 
+include::ClassesAndObjects.adoc[]
+
+include::Methods.adoc[]

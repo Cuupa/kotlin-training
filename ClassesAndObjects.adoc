@@ -1,0 +1,165 @@
+== Classes and Objects
+[%step]
+--
+[source, kotlin]
+----
+class MyClass
+----
+* "Normale" Klasse
+* Leere Klassen brauchen keine `{}`
+--
+
+[%step]
+--
+[source, kotlin]
+----
+object Myclass {
+    fun doSomething()
+}
+----
+* Singleton
+* Instanziierung nicht möglich
+** Zugriff über MyClass.doSomething()
+--
+
+== Interfaces
+[source, kotlin]
+----
+interface MyInterface {
+    fun doSomething()
+
+    fun doMoreSomething()
+}
+----
+* `public open` per default
+
+== Enums
+[source, kotlin]
+----
+enum class Directions {
+    NORTH, EAST, SOUTH, WEST
+}
+----
+
+== Sealed Class
+[source, kotlin]
+----
+sealed class Directions {
+    // do awesome stuff
+}
+----
+* Alle Subklassen müssen zur Kompile-Zeit bekannt sein
+
+== Data Class
+[source, kotlin]
+----
+data class Player(var name: String,
+    var level : Int, var inventory: Inventory)
+----
+[%step]
+* Quasi ein POJO
+* Neben `gettern&settern` wird auch `equals()`, `hashCode()`, `toString()` und `copy()` generiert
+* `equals()`, `hashCode()`, `toString()` und `copy()` dürfen auch selbst implementiert werden
+* Sind die Felder als `val` deklariert, werden keine `setter` generiert
+
+== Constructors
+[source, kotlin]
+----
+class MyClass
+----
+
+* Impliziter, leerer Konstruktor
+
+[%step]
+--
+[source, kotlin]
+----
+class MyClass(val value: Any)
+----
+* Konstruktor mit einem Parameter
+--
+[%step]
+[source, java]
+----
+public MyClass(Object value) {
+    this.value = value;
+}
+----
+
+== Constructor Overloading
+[source, kotlin]
+----
+class MyClass(val value: Any, val another: Any?) { <.>
+    constructor(val value: Any) : this(value, null) <.> <.>
+}
+----
+
+<.> Primärer Konstruktor
+<.> Sekundärer Konstruktor mit nur einem Parameter.
+<.> Aufruf primärer Konstruktor muss trotzdem erfolgen
+
+== Inheritence
+* Superclass muss `open` sein
+
+[%step]
+--
+[source, kotlin]
+----
+class MyClass : SuperClass() { <.>
+    // be awesome
+}
+----
+<.> Konstruktoraufruf zwingend
+--
+
+[%step]
+--
+[source, kotlin]
+----
+class MyClass(val value: Any) : SuperClass(value) { <.>
+    // be more awesome
+}
+----
+<.> value mit durchreichen, falls nötig
+--
+
+== Interfaces
+[source, kotlin]
+----
+class MyClass : Interface { <.>
+    // be awesome with interfaces
+}
+----
+<.> Interfaces haben keinen Konstruktor
+
+
+== Object instantiation
+[source, java]
+----
+MyClass myClass = new MyClass();
+----
+
+[%step]
+--
+[source, kotlin]
+----
+val myClass: MyClass = MyClass()<.><.>
+----
+<.> Typangabe ist optional
+<.> `new` gibt es in Kotlin nicht
+--
+
+[%step]
+[source, kotlin]
+----
+val myClass = MyClass()
+----
+
+[%step]
+--
+[source, kotlin]
+----
+val myClass: MyClass? = null <.>
+----
+<.> Hier ist die Typangabe nicht optional
+--
