@@ -2,20 +2,20 @@
 
 :icons: font
 
-include::AboutMe.adoc[]
+include::1_AboutMe.adoc[]
 
-include::Disclaimer.adoc[]
+include::2_Disclaimer.adoc[]
 
-include::Goals.adoc[]
+include::3_Goals.adoc[]
 
-include::Plan.adoc[]
+include::4_Plan.adoc[]
 
-include::AboutKotlin.adoc[]
+include::5_AboutKotlin.adoc[]
 
-include::Nullsafe.adoc[]
+include::6_Nullsafe.adoc[]
 
 include::Exercise1.adoc[]
 
-include::ClassesAndObjects.adoc[]
+include::7_ClassesAndObjects.adoc[]
 
-include::Methods.adoc[]
+include::8_Methods.adoc[]

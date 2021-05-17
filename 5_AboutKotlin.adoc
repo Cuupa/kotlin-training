@@ -11,6 +11,8 @@ image:images/Java-Logo.svg[width=100, float=right]
 * Ist eine JVM-Sprache
 [%step]
 * Erlaubt uns Java und Kotlin-Code zu mischen
+[%step]
+* Ist auch eine Insel
 
 [.columns]
 == About Kotlin
@@ -99,10 +101,10 @@ class Car
 ----
 
 [%step]
-* `public` per default
-** `public`, `private`, `package`, `internal`
-* `final` per default
-** `open`
+* `public`, `private`, `protected`, `internal`
+* Per default:
+** `public`
+** `final`
 
 == What did we just see? `var`
 [source, kotlin]
@@ -111,11 +113,14 @@ class Car
 ----
 
 [%step]
-* Schlüsselwort var
+* Schlüsselwort `var`
 ** "Normale" Variablendeklaration
-* Schlüsselwort val
+[%step]
+* Schlüsselwort `val`
 ** Entspricht dem Java `final`
+[%step]
 * `var`/`val` variablenname `:` Typ `=` ...
+** `val dingens: String = "hallo"`
 
 == What did we just see? `null`
 [source, kotlin]
@@ -126,7 +131,9 @@ var manufacturer: String = "Trabbi"
 
 [%step]
 * Kotlin ist nullsafe
+[%step]
 * Nullable values werden mit `?` gekennzeichnet
+[%step]
 * Kotlin ist nullsafe... except it isn't
 
 == What did we just see? `getter&setter`

@@ -8,8 +8,8 @@ image:images/ich.jpg[width=300, float=right]
 [.column]
 [%step]
 * Simon
-* 30 Jahre alt
-* seit 10 Jahren Java-Programmierer
+* 90er Jahrgang
+* seit 2010 Jahren Java-Programmierer
 * Kann recht gut tanzen
 
 == Connect
