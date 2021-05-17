@@ -1,0 +1,9 @@
+== Exercise 2
+
+[source]
+src/main/java/exercise/javaToKotlin
+
+Baut aus den Klassen `Inventory` und `Player` eine `data`-class
+
+[%step]
+Kopiert euch die bereits bestehenden Klassen und benennt sie um order arbeitet auf den Orignalen

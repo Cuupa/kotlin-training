@@ -407,7 +407,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );</script></head><
 <section id="_einrichtung"><h2>Einrichtung</h2><div class="slide-content"><div class="ulist"><ul><li><p><code>Intellij || STS || Eclipse</code></p><div class="ulist"><ul><li><p>Intellij preferred</p></li></ul></div></li><li><p><code>git</code></p></li><li><p><code>maven || graddle</code></p><div class="ulist"><ul><li><p>maven preferred</p></li></ul></div></li></ul></div></div></section>
 <section id="_einrichtung_2"><h2>Einrichtung</h2><div class="slide-content"><div class="ulist"><ul><li class="fragment"><p>Checkt das Projekt <code><a href="http://github.com/Cuupa/kotlin-training" class="bare">http://github.com/Cuupa/kotlin-training</a></code> aus</p></li><li class="fragment"><p><code>master</code></p></li><li class="fragment"><p><code>solution</code> &#8592; wenn ihr gar nicht weiter kommt</p></li><li class="fragment"><p>Hier sind auch die Slides</p></li></ul></div></div></section>
 <section id="_about_kotlin" class="columns"><h2>About Kotlin</h2><div class="slide-content"><div class="paragraph column"><p><span class="image" style="float: right"><img src="images/Java-Logo.svg" alt="Java Logo" width="100"></span></p></div>
-<div class="ulist column"><ul><li><p>Ist eine JVM-Sprache</p></li><li><p>Erlaubt uns Java und Kotlin-Code zu mischen</p></li></ul></div></div></section>
+<div class="ulist column"><ul><li><p>Ist auch eine Insel (vor St. Petersburg)</p></li><li><p>Ist eine JVM-Sprache</p></li><li><p>Erlaubt uns Java und Kotlin-Code zu mischen</p></li></ul></div></div></section>
 <section id="_about_kotlin_2" class="columns"><h2>About Kotlin</h2><div class="slide-content"><div class="ulist column"><ul><li class="fragment"><p>Wir können unsere Libraries nutzen</p></li><li class="fragment"><p>Es ist normaler Bytecode</p></li></ul></div>
 <div class="paragraph column fragment"><p>YAAAY!</p></div></div></section>
 <section id="_combine_kotlin_java" class="columns"><h2>Combine Kotlin &amp; Java</h2><div class="slide-content"><div class="listingblock column"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">package kotlin_java.way1
@@ -590,9 +590,6 @@ class Car {
     var manufacturer: String = ""
 }</code></pre></div></div>
 <div class="ulist"><ul><li class="fragment"><p>Fachlich vielleicht nicht gewünscht</p></li></ul></div></div></section>
-<section id="_exercise_1"><h2>Exercise 1</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code>src/main/java/exercise/javaToKotlin</code></pre></div></div>
-<div class="paragraph"><p>Erstelle für die Klassen <code>Player.java</code> und <code>Inventory.java</code> eine Repräsentation in Kotlin</p></div>
-<div class="paragraph fragment"><p>Hint: Die Dateiendung für Kotlin ist <code>.kt</code></p></div></div></section>
 <section id="_classes_and_objects"><h2>Classes and Objects</h2><div class="slide-content"><div class="openblock fragment"><div class="content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">class MyClass</code></pre></div></div>
 <div class="ulist"><ul><li><p>"Normale" Klasse</p></li><li><p>Leere Klassen brauchen keine <code>{}</code></p></li></ul></div></div></div>
 <div class="openblock fragment"><div class="content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">object Myclass {
@@ -645,6 +642,12 @@ class Car {
 <div class="listingblock fragment"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">val myClass = MyClass()</code></pre></div></div>
 <div class="openblock fragment"><div class="content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">val myClass: MyClass? = null <i class="conum" data-value="1"></i><b>(1)</b></code></pre></div></div>
 <div class="colist arabic"><table><tr><td><i class="conum" data-value="1"></i><b>1</b></td><td>Hier ist die Typangabe nicht optional</td></tr></table></div></div></div></div></section>
+<section id="_exercise_1"><h2>Exercise 1</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code>src/main/java/exercise/javaToKotlin</code></pre></div></div>
+<div class="paragraph"><p>Erstelle für die Klassen <code>Player.java</code> und <code>Inventory.java</code> eine Klasse in Kotlin</p></div>
+<div class="paragraph fragment"><p>Hint: Die Dateiendung für Kotlin ist <code>.kt</code></p></div></div></section>
+<section id="_exercise_2"><h2>Exercise 2</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code>src/main/java/exercise/javaToKotlin</code></pre></div></div>
+<div class="paragraph"><p>Baut aus den Klassen <code>Inventory</code> und <code>Player</code> eine <code>data</code>-class</p></div>
+<div class="paragraph fragment"><p>Kopiert euch die bereits bestehenden Klassen und benennt sie um order arbeitet auf den Orignalen</p></div></div></section>
 <section id="_methods"><h2>Methods</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">fun doSomething() { <i class="conum" data-value="1"></i><b>(1)</b>
     // TODO: Something
 }</code></pre></div></div>
@@ -653,12 +656,18 @@ class Car {
 <div class="openblock fragment"><div class="content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">fun doSomething(): Boolean { <i class="conum" data-value="1"></i><b>(1)</b>
     return false
 }</code></pre></div></div>
-<div class="colist arabic"><table><tr><td><i class="conum" data-value="1"></i><b>1</b></td><td>Return-Type nach Doppelpunkt</td></tr></table></div></div></div>
-<div class="openblock fragment"><div class="content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">fun doSomething(param1: Any, param2: Any?) : Any { <i class="conum" data-value="1"></i><b>(1)</b><i class="conum" data-value="2"></i><b>(2)</b>
+<div class="colist arabic"><table><tr><td><i class="conum" data-value="1"></i><b>1</b></td><td>Return-Type nach Doppelpunkt</td></tr></table></div></div></div></div></section>
+<section id="_methods_2"><h2>Methods</h2><div class="slide-content"><div class="openblock"><div class="content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-kotlin" data-lang="kotlin">fun doSomething(param1: Any, param2: Any?) : Any { <i class="conum" data-value="1"></i><b>(1)</b><i class="conum" data-value="2"></i><b>(2)</b>
     //Do some awesome stuff
 }</code></pre></div></div>
 <div class="colist arabic"><table><tr><td><i class="conum" data-value="1"></i><b>1</b></td><td>Parameter sind immer <code>val</code></td></tr><tr><td><i class="conum" data-value="2"></i><b>2</b></td><td><code>Any</code> ist <code>Object</code> aus Java</td></tr></table></div></div></div>
-<div class="ulist"><ul><li class="fragment"><p>Raider heißt jetzt Twix, sonst ändert sich nix</p></li><li class="fragment"><p>Es würde auch mit Object compilen</p></li></ul></div></div></section></div></div><script src="node_modules/reveal.js/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+<div class="ulist"><ul><li class="fragment"><p>Raider heißt jetzt Twix, sonst ändert sich nix</p></li><li class="fragment"><p>Es würde auch mit Object compilen</p></li></ul></div></div></section>
+<section id="_methods_3"><h2>Methods</h2><div class="slide-content"><div class="openblock"><div class="content"><div class="ulist"><ul><li><p>Kotlin kann <code>named arguments</code></p></li></ul></div>
+<div class="listingblock"><div class="content"><pre>fun doSomething(param1: Any, param2: Any): Any {
+    return SomeMagic()
+}</pre></div></div></div></div>
+<div class="openblock"><div class="content"><div class="listingblock"><div class="content"><pre>doSomething(param2 = MagicIngredient2(), param1 = MagicIngredient1())<i class="conum" data-value="1"></i><b>(1)</b></pre></div></div>
+<div class="colist arabic"><table><tr><td><i class="conum" data-value="1"></i><b>1</b></td><td>Reihenfolge bei <code>named parameters</code> egal</td></tr></table></div></div></div></div></section></div></div><script src="node_modules/reveal.js/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;

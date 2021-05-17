@@ -3,7 +3,7 @@
 [source]
 src/main/java/exercise/javaToKotlin
 
-Erstelle für die Klassen `Player.java` und `Inventory.java` eine Repräsentation in Kotlin
+Erstelle für die Klassen `Player.java` und `Inventory.java` eine Klasse in Kotlin
 
 [%step]
 Hint: Die Dateiendung für Kotlin ist `.kt`

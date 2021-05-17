@@ -1,2 +1,2 @@
 #!/bin/bash
-npx asciidoctor-revealjs Presentation.adoc
+asciidoctor-revealjs Presentation.adoc
