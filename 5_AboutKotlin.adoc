@@ -8,11 +8,10 @@ image:images/Java-Logo.svg[width=100, float=right]
 //--
 
 [.column]
+* Ist auch eine Insel (vor St. Petersburg)
 * Ist eine JVM-Sprache
 [%step]
 * Erlaubt uns Java und Kotlin-Code zu mischen
-[%step]
-* Ist auch eine Insel
 
 [.columns]
 == About Kotlin

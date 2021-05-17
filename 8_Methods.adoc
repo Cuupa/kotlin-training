@@ -22,7 +22,8 @@ fun doSomething(): Boolean { <.>
 <.> Return-Type nach Doppelpunkt
 --
 
-[%step]
+
+== Methods
 --
 [source, kotlin]
 ----
@@ -37,3 +38,22 @@ fun doSomething(param1: Any, param2: Any?) : Any { <.><.>
 [%step]
 * Raider heißt jetzt Twix, sonst ändert sich nix
 * Es würde auch mit Object compilen
+
+
+== Methods
+
+--
+* Kotlin kann `named arguments`
+----
+fun doSomething(param1: Any, param2: Any): Any {
+    return SomeMagic()
+}
+----
+--
+--
+----
+doSomething(param2 = MagicIngredient2(), param1 = MagicIngredient1())<.>
+----
+<.> Reihenfolge bei `named parameters` egal
+--
+
