@@ -1,5 +1,4 @@
 == Nullsafety
-image:images/non-nullable.png[]
 ----
 Null can not be a value of a non-null type String
 ----
@@ -14,6 +13,12 @@ include::src/main/java/nullsafe/CarValidator.java[]
 ----
 
 == How to solve in kotlin
+* Before we begin: In Kotlin werden Strings mit `==` verglichen
+[%step]
+* .equals() funktioniert trotzdem noch
+** Notice how awesome JVM languages are!
+
+== How to solve in Kotlin
 [source, java]
 ----
 include::src/main/java/nullsafe/CarValidator_kotlin.kt[]

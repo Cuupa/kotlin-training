@@ -1,4 +1,4 @@
-== Classes and Objects
+== Classes
 [%step]
 --
 [source, kotlin]
@@ -7,13 +7,42 @@ class MyClass
 ----
 * "Normale" Klasse
 * Leere Klassen brauchen keine `{}`
+[%step]
+* `public final` per default
+--
+
+== Inner Classes
+--
+[source, kotlin]
+----
+include::src/main/java/innerclasses/MyOuterClass.kt[]
+----
+* Interfaces und Classes können beliebig ge-"nested" werden
+--
+== Inner Classes
+--
+[source, kotlin]
+----
+class MyOuterClass {
+    private val: Int = 1
+    inner class MyInnerClass {
+        val doMagic = 5
+    }
+}
+
+----
+Mit `inner` gekennzeichnete Klassen:
+[%step]
+* Können auf die Member der äußeren Klasse zugreifen
+[%step]
+* Haben eine
 --
 
 [%step]
 --
 [source, kotlin]
 ----
-object Myclass {
+object MyClass {
     fun doSomething()
 }
 ----

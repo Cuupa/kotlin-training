@@ -14,6 +14,6 @@
 == Einrichtung
 [%step]
 * Checkt das Projekt `http://github.com/Cuupa/kotlin-training` aus
-* `master`
+* `main` <- "Arbeitsbranch"
 * `solution` <- wenn ihr gar nicht weiter kommt
 * Hier sind auch die Slides

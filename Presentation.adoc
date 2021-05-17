@@ -18,6 +18,8 @@ include::Exercise1.adoc[]
 
 include::Exercise2.adoc[]
 
-include::7_ClassesAndObjects.adoc[]
+include::7_Assignments.adoc[]
+
+include::8_ClassesAndObjects.adoc[]
 
 include::8_Methods.adoc[]
